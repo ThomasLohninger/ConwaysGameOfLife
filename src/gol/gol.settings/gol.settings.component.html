@@ -1,0 +1,22 @@
+<div class="settings-container">
+  <h1>Settings</h1>
+  <mat-form-field>
+    <input type="number" min="5" max="100"
+           [(ngModel)]="rows"
+           matInput
+           placeholder="Number of rows"
+           required>
+  </mat-form-field>
+  <mat-form-field>
+    <input type="number" min="5" max="100"
+           [(ngModel)]="cols"
+           matInput
+           placeholder="Number of columns"
+           required>
+  </mat-form-field>
+  <button mat-button
+          (click)="setGrid()"
+          required>
+    Save
+  </button>
+</div>

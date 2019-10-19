@@ -1,0 +1,14 @@
+:host {
+  position: relative;
+  right: -40%;
+  top: -10px;
+}
+
+@media only screen and (min-width: 430px) {
+  :host {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+  }
+}
+

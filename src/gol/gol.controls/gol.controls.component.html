@@ -1,0 +1,32 @@
+<div class="buttonGroup">
+  <button mat-icon-button
+          [disabled]="isRunning"
+          matTooltip="Autoplay"
+          (click)="autoPlay()">
+    <mat-icon>play_circle_outline</mat-icon>
+  </button>
+  <button mat-icon-button
+          [disabled]="!isRunning"
+          matTooltip="Pause"
+          (click)="pause()">
+    <mat-icon>pause_circle_outline</mat-icon>
+  </button>
+  <button mat-icon-button
+          [disabled]="isRunning"
+          matTooltip="Next Generation"
+          (click)="nextGeneration()">
+    <mat-icon>navigate_next</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    matTooltip="Shuffle grid"
+    (click)="shuffle()">
+    <mat-icon>shuffle</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    matTooltip="Reset grid"
+    (click)="reset()">
+    <mat-icon>clear</mat-icon>
+  </button>
+</div>

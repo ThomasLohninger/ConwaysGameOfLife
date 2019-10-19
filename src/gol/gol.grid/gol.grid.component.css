@@ -1,0 +1,36 @@
+.grid-row {
+  display: flex;
+  margin-bottom: 1px;
+}
+
+.grid-row:last-child {
+  margin-bottom: 0;
+}
+
+.grid-cell {
+  border: 0.1vw solid rgba(161, 0, 61, 0.08);
+  margin-right: 0.1vw;
+  background-color: #ffffff;
+}
+
+.grid-cell:last-child {
+  margin-right: 0;
+}
+
+.alive {
+  background-color: #a1003d;
+}
+
+.grid-ctrl {
+  display: flex;
+  margin-top: 0.5vw;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.grid-ctrl > p {
+  color: rgba(0, 0, 0, 0.39);
+  font-size: 0.8em;
+  margin-top: 0;
+  margin-left: 1vw;
+}
